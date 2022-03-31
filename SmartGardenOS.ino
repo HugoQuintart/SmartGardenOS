@@ -1,5 +1,3 @@
-
-
 /*
          __     __   __      __   __________       _______________
         /  /   /  / /  /    /  / /  _______/      /   ________    /
@@ -147,7 +145,7 @@ lcd.clear(); // effacer l'écran lcd
  
   // ***********************************************partie arrosage**********************************************
       // enclencher la pompe d'arrosage si l'humidité du sol est inférieure à 40%
-      if(hygroVal <= 50){
+      if(hygroVal <= 67){
         digitalWrite(wateringPin, HIGH);
         wateringState = 1;
       }
@@ -157,7 +155,7 @@ lcd.clear(); // effacer l'écran lcd
         dryingState = 1;
       }
       // arrêter les pompes quand on se situe à nouveau dans la fourchette adaptée à la plante.
-      if (hygroVal  >= 43) {
+      if (hygroVal  >= 72) {
         if (hygroVal <= 75) {
           digitalWrite(wateringPin, LOW);
           wateringState = 0;
