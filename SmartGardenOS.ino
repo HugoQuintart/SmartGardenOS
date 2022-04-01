@@ -111,7 +111,7 @@ lcd.clear(); // effacer l'écran lcd
     lcd.setCursor(0,0);
     lcd.print("Erreur Capteur DHT");
     lcd.setCursor(0,1);
-    lcd.print("Vérifier la");
+    lcd.print("Verifier la");
     lcd.setCursor(0,2);
     lcd.print("connexion");
     delay(1000);
