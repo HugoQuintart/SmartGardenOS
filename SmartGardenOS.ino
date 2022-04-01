@@ -1,3 +1,4 @@
+
 /*
          __     __   __      __   __________       _______________
         /  /   /  / /  /    /  / /  _______/      /   ________    /
@@ -49,8 +50,8 @@ int hygroVal; // initialiser la variable qui va socker le pourcentage d'humidit�
 
 
 //préparation des variables pour l'arrosage:
-int dryingPin = 41; // Définir la pin de la pompe de reprise sur la pin digitale 12
-int wateringPin = 40; // Brancher la pompe d'arrosage sur la pin digitale 11
+int dryingPin = 41; // Définir la pin de la pompe de reprise sur la pin digitale 41
+int wateringPin = 44; // Brancher la pompe d'arrosage sur la pin digitale 44
 int wateringState; //initialiser la variable qui va stocker l'état de la pompe d'arrosage.
 int dryingState; // initialiser la variable qui va stocker l'état de la pompe de reprise.
 
@@ -145,7 +146,7 @@ lcd.clear(); // effacer l'écran lcd
  
   // ***********************************************partie arrosage**********************************************
       // enclencher la pompe d'arrosage si l'humidité du sol est inférieure à 40%
-      if(hygroVal <= 67){
+      if(hygroVal <= 65){
         digitalWrite(wateringPin, HIGH);
         wateringState = 1;
       }
@@ -155,8 +156,8 @@ lcd.clear(); // effacer l'écran lcd
         dryingState = 1;
       }
       // arrêter les pompes quand on se situe à nouveau dans la fourchette adaptée à la plante.
-      if (hygroVal  >= 72) {
-        if (hygroVal <= 75) {
+      if (hygroVal  >= 43) {
+        if (hygroVal <= 73) {
           digitalWrite(wateringPin, LOW);
           wateringState = 0;
           digitalWrite(dryingPin, LOW);
