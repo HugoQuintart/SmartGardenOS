@@ -50,8 +50,8 @@ int hygroVal; // initialiser la variable qui va socker le pourcentage d'humidit�
 
 
 //préparation des variables pour l'arrosage:
-int dryingPin = 41; // Définir la pin de la pompe de reprise sur la pin digitale 41
-int wateringPin = 44; // Brancher la pompe d'arrosage sur la pin digitale 44
+int dryingPin = 42; // Définir la pin de la pompe de reprise sur la pin digitale 41
+int wateringPin = 41; // Brancher la pompe d'arrosage sur la pin digitale 44
 int wateringState; //initialiser la variable qui va stocker l'état de la pompe d'arrosage.
 int dryingState; // initialiser la variable qui va stocker l'état de la pompe de reprise.
 
@@ -145,21 +145,29 @@ lcd.clear(); // effacer l'écran lcd
 
  
   // ***********************************************partie arrosage**********************************************
-      // enclencher la pompe d'arrosage si l'humidité du sol est inférieure à 40%
+  moistureValue = (analogRead(moisturePin1) + analogRead(moisturePin2) + analogRead(moisturePin3) + analogRead(moisturePin4) + analogRead(moisturePin5));
+  moistureUsable = moistureValue / 5;
+  hygroVal = map(moistureUsable, dry, wet, 0, 100); // on défini les différents seuils initialisés au départ comme les seuils 0 et 100%
+  
+       // enclencher la pompe d'arrosage si l'humidité du sol est inférieure à 65%
       if(hygroVal <= 65){
+ Serial.println("wateringPin, HIGH");
         digitalWrite(wateringPin, HIGH);
         wateringState = 1;
       }
       // enclencher la pompe de reprise si l'humidité du sol dépasse les 90%
       if(hygroVal >= 90){
+ Serial.println("dryingPin, HIGH");
         digitalWrite(dryingPin, HIGH);
         dryingState = 1;
       }
       // arrêter les pompes quand on se situe à nouveau dans la fourchette adaptée à la plante.
-      if (hygroVal  >= 43) {
-        if (hygroVal <= 73) {
+      if (hygroVal  >= 80) {
+        if (hygroVal <= 74) {
+ Serial.println("wateringPin, LOW");
           digitalWrite(wateringPin, LOW);
           wateringState = 0;
+ Serial.println("dryingPin, LOW");
           digitalWrite(dryingPin, LOW);
           dryingState = 0;
         }
@@ -206,8 +214,5 @@ lcd.clear(); // effacer l'écran lcd
     lcd.print("Pas de sonde de t*.");
     Serial.println("Error: Could not read temperature data");
   }
-
-
- 
   
 }
