@@ -1,0 +1,23 @@
+1) Relais 5V modèle KY-019:
+https://www.amazon.fr/gp/product/B07CNR7K9B/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+
+2) Carte type Arduino Mega:
+https://www.amazon.fr/gp/product/B06XNPKSDK/ref=ppx_yo_dt_b_asin_title_o03_s05?ie=UTF8&psc=1
+
+3) Capteurs d'humidité du sol:
+https://www.amazon.fr/gp/product/B088LPJL7Q/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1
+
+4) Sonde de température du sol (DS18b20):
+https://www.amazon.fr/gp/product/B01MZG48OE/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
+
+5) Capteur d'humidité et de température de l'air (DHT22):
+https://www.amazon.fr/gp/product/B08HDKMMWY/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1
+
+6) Pompe 12V:
+https://www.amazon.fr/gp/product/B07WNGX8CN/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1
+
+7) Ecran LCD 20x4:
+https://www.amazon.fr/gp/product/B07R9HXR1W/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
+
+8) Tuyauts 6mm:
+https://www.amazon.fr/gp/product/B07P19HK4L/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1
