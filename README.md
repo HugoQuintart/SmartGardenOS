@@ -9,4 +9,4 @@ Si vous voulez le reproduire à votre tour, voici quelques infos:
 - Pour l'impression 3D, je vous recommande la Wanhao duplicator 12, c'est une bonne imprimante.
 - Le filament utilisé est vendu par 3D&Print, c'est un PLA de bonne qualité! Juste bien chauffer la buse d'impression à 210 °C et le plateau à 62°C.
 
-Pour tout renseignement, merci de me contacter à l'adresse hugo.quintart@athenee-ath.be
+Pour tout renseignement ou modification à apporter, merci de me contacter à l'adresse hugo.quintart@athenee-ath.be
