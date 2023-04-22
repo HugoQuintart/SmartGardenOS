@@ -17,3 +17,7 @@ Une version anglophone a été crée suite à notre victoire à Science-Expo 202
 Tout est parti d'un dessin à l'arrière de la classe en plein cours de français... et voilà où j'en suis maintenant...
 Voici le lien vers la version Anglophone de ce projet, un peu fou certes, mais dont je suis fier:
 >>> https://github.com/HugoQuintart/SmartGardeningSystem
+
+![image](https://user-images.githubusercontent.com/98947898/233804446-72f9366e-aa1f-4088-87d4-15c1bb74c37c.png)
+
+Ce projet est sous licence Creative Commons. Interdit de le répliquer, de le vendre ou de faire un quelconque profit dessus.
